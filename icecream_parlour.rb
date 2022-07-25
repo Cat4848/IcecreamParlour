@@ -1,6 +1,5 @@
 
-
-#welcome and menu iteration begin
+    #welcome and menu iteration begin
 class Icecream
        #menu data begin
     @@icecream_scoop_price = 1.21
@@ -24,7 +23,7 @@ class Icecream
 
     @@topping = ["chocolate_syrup", "strawberry_syrup"]
       
- #menu data end
+        #menu data end
 
     @@order_summary = []
 
@@ -74,6 +73,8 @@ class Icecream
             puts "--------------------------------------------------------------------------------------------------------------------------------------"
             puts
         end
+
+    #welcome and menu itaration end
 
     def flavour1_select
         puts "--- Type the name of the first icecream flavour of your choice:"
@@ -203,20 +204,20 @@ class Icecream
 
 end
 
-welcome_and_menu = Icecream.new
-welcome_and_menu.menu_iteration()
-welcome_and_menu.extras_iteration()
-welcome_and_menu.topping_iteration()
-welcome_and_menu.health_warning()
-welcome_and_menu.flavour1_select()
-welcome_and_menu.flavour2_select()
-welcome_and_menu.extras_select()
-welcome_and_menu.topping_select()
-welcome_and_menu.order_iteration()
+new_icecream_order = Icecream.new
+new_icecream_order.menu_iteration()
+new_icecream_order.extras_iteration()
+new_icecream_order.topping_iteration()
+new_icecream_order.health_warning()
+new_icecream_order.flavour1_select()
+new_icecream_order.flavour2_select()
+new_icecream_order.extras_select()
+new_icecream_order.topping_select()
+new_icecream_order.order_iteration()
 
-icecream_count_value = welcome_and_menu.icecream_count()
-extra_count_value = welcome_and_menu.extra_count()
-topping_count_value = welcome_and_menu.topping_count()
+icecream_count_value = new_icecream_order.icecream_count()
+extra_count_value = new_icecream_order.extra_count()
+topping_count_value = new_icecream_order.topping_count()
 
 total = icecream_count_value + extra_count_value
 puts "----------------------------"
@@ -253,7 +254,6 @@ puts"           !"
 
 
 
-#welcome and menu itaration end
 
 
 
